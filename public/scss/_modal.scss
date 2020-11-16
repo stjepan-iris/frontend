@@ -1,0 +1,153 @@
+.modal_bg{
+	position: absolute;
+	width: 100%;
+  height: 338vh;
+	top: 72px;
+    left: 0;
+    background-color: $blur;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.7s;
+
+    .modal {
+        position: absolute;
+        top: 0px;
+        background-color: $white;
+        width: 500px;
+        height: 300px;
+        border: 0.5px solid $black;
+        border-radius: 2px;
+
+        .modal___exit {
+            position: absolute;
+            right: 0;
+            padding-left: 2px;
+            padding-right: 2px;
+            margin: 2px;
+            cursor: pointer;
+        }
+
+        .modal___text{
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            font-size: 12px;
+          }
+
+          .modal___split {
+              position: relative;
+              left: 5%;
+              width: 90%;
+              z-index: 2;
+              color: $grey;
+              border: 0.5px solid;
+            }
+            .modal___kop {
+              position: absolute;
+              right: 3rem;
+              top: 250px;
+              width: 60px;
+              height: 30px;
+              @include borderR;
+              background: $white;
+              border: 1px solid $secondaryColor;
+            }
+        
+            .cartList {
+              list-style-type: none;
+              margin: 0px 20px;
+            }
+            .cartRow {
+              display: flex;
+              justify-content: space-around;
+              flex-direction: row;
+              margin-top: 10px;
+            }
+            .cartNamnPro{
+              margin-right: 10px;
+              max-width: 30px;
+            }
+            .cartInner{
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              min-width: 40px;
+            }
+            .decrease{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background: $whiteWhite;
+              width: 20px;
+              height: 25px;
+              border: none;
+              border-top-left-radius: 4px;
+              border-bottom-left-radius: 4px;
+            }
+
+            .nummer{
+              width: 40px;
+              border: none;
+              text-align: center;
+            }      
+            
+            .increase{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background: $whiteWhite;
+              width: 20px;
+              height: 25px;
+              border: none;
+              border-top-right-radius: 4px;
+              border-bottom-right-radius: 4px;
+            }
+          }
+            
+          .cartpriss{
+            max-width: 30px;
+          }
+        }
+            
+          
+        
+        
+    
+.bg_active{
+    visibility: visible;
+    opacity: 1;
+    /*animation: scale-up-tr 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;*/
+    /* animation: scale-up-hor-right 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.2s both; */
+}
+
+
+/*@keyframes scale-up-tr {
+    0% {
+      transform: scale(0.5);
+      transform-origin: 100% 0%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: 100% 0%;
+    }
+  } */
+
+
+  /* fade in animering
+// @keyframes scale-up-hor-right {
+//     0% {
+//       transform: scaleX(-0.5);
+//       transform-origin: 100% 100%;
+//     }
+//     100% {
+//       transform: scaleX(1);
+//       transform-origin: 100% 100%;
+//     }
+   }*/
+
+
+   
